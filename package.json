@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "nodemon --exec babel-node ./src/bin/www",
-    "build": "babel ./src --out-dir build",
-    "start": "node ./src/bin/www",
+    "prestart": "babel ./src --out-dir build",
+    "start": "node ./build/bin/www",
     "runQuery": "babel-node ./src/utils/runQuery"
   },
   "dependencies": {
